@@ -80,7 +80,8 @@
   margin-right: 20px;
 }
 
-/* color-shape */
+
+/* project image style */
 
 .project-filter {
   float: left;
@@ -88,8 +89,37 @@
   padding: 0;
 }
 
+.project-filter a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
 .project-filter img {
   width: 100%;
+}
+
+.project-filter figcaption {
+  padding: 10px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .7);
+  color: #fff;
+  position: absolute;
+  bottom: -42px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+         -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+
+}
+
+.project-filter a:hover figcaption {
+  bottom: 0;
+  opacity: 1;
+  filter: alpha(opacity=1);
 }
 
 .progress {
